@@ -22,7 +22,7 @@ const userSchema = mongoose.Schema({
 
     image:String,
     token:{
-        type:toString
+        type:String
     },
     tokenExp:{
         type: Number //token 사용 기간
@@ -31,4 +31,4 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model('User', userSchema)
 
-module.exports =(User);
+module.exports ={User};
